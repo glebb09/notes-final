@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: hsl(0, 0%, 97%);
+
+  min-block-size: 100vh;
+  overflow: hidden;
+}
+
+* {
+
+  --brand-hue: 200;
+  --brand-saturation: 100%;
+  --brand-lightness: 50%;
+
+  // lignt
+
+  // background
+
+  --backgaround-light: hsl(0, 0%, 97%);
+
+  // color
+  --brand-lignt: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
+
+  // text color
+  --text-one-light: hsl(var(--brand-hue) var(--brand-saturation) 10%);
+  --text-two-light: hsl(var(--brand-hue) 30% 30%);
+
+  // surface
+  --surface-one-light: hsl(var(--brand-hue) 25% 90%);
+  --surface-two-light: hsl(var(--brand-hue) 20% 99%);
+  --surface-three-light: hsl(var(--brand-hue) 20% 92%);
+  --surface-four-light: hsl(var(--brand-hue) 20% 85%);
+
+  // shadow
+  --surface-shadow-light: var(--brand-hue) 10% 20%;
+  --shadow-strength-light: .02;
+ 
+
+  // dark
+  --brand-dark: hsl(var(--brand-hue) calc(var(--brand-saturation) / 2) calc(var(--brand-lightness) / 1.5));
+
+  // text
+  --text-one-dark: hsl(var(--brand-hue) 15% 85%);
+  --text-two-dark: hsl(var(--brand-hue) 5% 65%);
+
+  // surface
+  --surface-one-dark: hsl(var(--brand-hue) 10% 10%);
+  --surface-two-dark: hsl(var(--brand-hue) 10% 15%);
+  --surface-three-dark: hsl(var(--brand-hue) 5% 20%);
+  --surface-four-dark: hsl(var(--brand-hue) 5% 25%);
+
+  // shadow
+
+  --surface-shadow-dark: var(--brand-hue) 50% 3%;
+  --shadow-strength-dark: .8;
+}
+
+
+:root {
+  color-scheme: light;
+
+  --background: var(--baclgaround-light);
+
+  --brand: var(--brand-lignt);
+
+  --text-one: var(--text-one-light);
+  --text-two: var(--text-two-light);
+
+  --surface-one: var(--surface-one-light);
+  --surface-two: var(--surface-two-light);
+  --surface-three: var(--surface-three-light);
+  --surface-four: var(--surface-four-light);
+
+  --surface-shadow: var(--surface-shadow-light);
+  --shadow-strength: var(--shadow-strength-light);
+
+
+  //button 
+
+  --padding-inline-btn: 1.75ch;
+  --padding-block-btn: .75ch;
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    color-scheme: dark;
+
+    --background: var(--brand-dark);
+
+    --text-one: var(--text-one-dark);
+    --text-two: var(--text-two-dark);
+
+    --surface-one: var(--surface-one-dark);
+    --surface-two: var(--surface-two-dark);
+    --surface-three: var(--surface-three-dark);
+    --surface-four: var(--surface-four-dark);
+
+    --surface-shadow: var(--surface-shadow-dark);
+    --shadow-strength: var(--shadow-strength-dark);
+  }
+}
+
+[color-scheme="light"] {
+  color-scheme: light;
+
+  --background: var(--baclgaround-light);
+
+  --brand: var(--brand-light);
+
+  --text-one: var(--text-one-light);
+  --text-two: var(--text-two-light);
+
+  --surface-one: var(--surface-one-light);
+  --surface-two: var(--surface-two-light);
+  --surface-three: var(--surface-three-light);
+  --surface-four: var(--surface-four-light);
+
+  --surface-shadow: var(--surface-shadow-light);
+  --shadow-strength: var(--shadow-strength-light);
+}
+
+[color-scheme="dark"] {
+  color-scheme: dark;
+  
+  --brand: var(--brand-dark);
+
+  --text-one: var(--text-one-dark);
+  --text-two: var(--text-two-dark);
+
+  --surface-one: var(--surface-one-dark);
+  --surface-two: var(--surface-two-dark);
+  --surface-three: var(--surface-three-dark);
+  --surface-four: var(--surface-four-dark);
+
+  --surface-shadow: var(--surface-shadow-dark);
+  --shadow-strength: var(--shadow-strength-dark);
+}

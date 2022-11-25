@@ -1,0 +1,44 @@
+
+input {
+  --shadow-color: 220 3% 15%;
+  --shadow-strength: 1%;
+
+  border: none;
+  appearance: none;
+
+  display: block;
+
+  width: 30em;
+  height: 40px;
+
+  max-width: calc(100vw - 30em);
+
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+
+  padding-inline-start: 40px;
+
+  box-shadow: 
+    0 1px 2px -1px hsl( var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  
+  // box-shadow: 0 0 0 2px var(--surface-shadow);
+
+  transition: all .25s;
+
+  &:where(:focus, :active) {
+    outline-offset: 5px;
+    outline-color: #2260ff;
+		box-shadow: 0 5px 10px hsla(0, 0, 0, 0.1), 0 0 0 5px #b5c9fc;
+  }
+}
+
+
+
+@media (max-width: 531px) {
+  .input {
+    max-width: calc(100vw - 20em);
+  }
+} 

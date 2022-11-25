@@ -1,0 +1,35 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-gap: 1rem;
+  
+  width: 100%;
+  max-width: 1250px;
+
+  min-height: calc(100vh - 3.3em);
+
+  margin: 0 auto;
+
+}
+
+@media (max-width: 730px) {
+  .content {
+    display: flex;
+
+  }
+}
+
+@media (max-width: 531px) {
+  .content {
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+

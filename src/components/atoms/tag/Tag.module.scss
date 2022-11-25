@@ -1,0 +1,25 @@
+
+.container {
+  margin-block-end: .25rem;
+  margin-inline-end: .5rem;
+
+  display: inline-block;
+  text-align: center;
+
+  background: hsl(255, 47%, 56%);
+  color: hsl(0 0 99);
+
+  font-size: 14px;
+
+  padding: .35ch 1ch;
+  border-radius: 100px;
+
+  max-width: 50px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  box-shadow: 0 1px 2px 0 hsla(0, 0%, 0%, 0.15);
+
+}
